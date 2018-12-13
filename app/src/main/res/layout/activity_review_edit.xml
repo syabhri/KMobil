@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="5dp"
+    tools:context=".ReviewEditActivity">
+
+    <TextView
+        android:id="@+id/tvProfilSaya"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Edit Review"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:textColor="@color/color1"
+        android:layout_below="@id/btBack"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"/>
+
+    <Button
+        android:id="@+id/btBack"
+        android:layout_width="wrap_content"
+        android:layout_height="24dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="@color/color1"
+        android:text="Kembali"
+        android:textColor="@color/color2" />
+
+    <View
+        android:id="@+id/kolomAtas"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:background="@color/color1"
+        android:layout_below="@id/tvProfilSaya"
+        android:layout_marginTop="5dp"/>
+
+    <TextView
+        android:id="@+id/tvRating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/kolomAtas"
+        android:layout_marginLeft="10dp"
+        android:text="Rating"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:id="@+id/tvDeskripsi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvRating"
+        android:text="Masukan Deskripsi"
+        android:layout_alignLeft="@id/tvRating"
+        android:layout_marginTop="20dp"/>
+    <Spinner
+        android:id="@+id/spinnerRating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/tvRating"
+        android:layout_alignBaseline="@id/tvRating"
+        android:entries="@array/rating"/>
+
+    <EditText
+        android:id="@+id/edtDeskripsi"
+        android:layout_width="244dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/tvDeskripsi"
+        android:layout_alignLeft="@id/spinnerRating"
+        android:layout_marginLeft="81dp" />
+
+    <Button
+        android:id="@+id/btEdit"
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:layout_alignEnd="@+id/spinnerRating"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="185dp"
+        android:background="@color/color1"
+        android:text="Update"
+        android:textColor="@color/color2" />
+
+    <Button
+        android:id="@+id/btDelete"
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/btEdit"
+        android:layout_marginEnd="70dp"
+        android:background="@color/color2"
+        android:text="Hapus"
+        android:textColor="@color/color1" />
+
+</RelativeLayout>

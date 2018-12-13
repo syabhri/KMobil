@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <View
+                android:id="@+id/kolomAtas"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:background="@color/color1"></View>
+
+            <TextView
+                android:id="@+id/idKatalog"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:text="ID: "
+                android:textColor="@color/color2" />
+
+            <TextView
+                android:id="@+id/tvIdKatalog"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/idKatalog"
+                android:hint="id kopian di sini"
+                android:textColor="@color/color2" />
+
+            <RelativeLayout
+                android:id="@+id/relativeContent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/kolomAtas">
+
+                <TextView
+                    android:id="@+id/tvNamaKatalog"
+                    android:layout_width="165dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="15dp"
+                    android:hint="Nama User di Sini"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvAlamatKatalog"
+                    android:layout_width="165dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@id/tvNamaKatalog"
+                    android:layout_below="@id/tvNamaKatalog"
+                    android:layout_marginTop="15dp"
+                    android:hint="Alamatnya"
+                    android:textStyle="italic" />
+
+
+                <ImageView
+                    android:id="@+id/mobilPhoto"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="10dp" />
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@color/color1" />
+</LinearLayout>

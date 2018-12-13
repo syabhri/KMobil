@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="5dp"
+    tools:context=".EditProfilActivity">
+
+    <TextView
+        android:id="@+id/tvProfilSaya"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/btBack"
+        android:layout_centerHorizontal="true"
+        android:text="Edit Profil"
+        android:textColor="@color/color1"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btBack"
+        android:layout_width="wrap_content"
+        android:layout_height="24dp"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/kolomAtas"
+        android:background="@color/color1"
+        android:text="Kembali"
+        android:textColor="@color/color2" />
+
+    <View
+        android:id="@+id/kolomAtas"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="@color/color1">
+
+    </View>
+
+    <ImageView
+        android:id="@+id/ivPhoto"
+        android:layout_width="120dp"
+        android:layout_height="100dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="-19dp"
+        android:layout_marginTop="79dp"
+        android:layout_toStartOf="@+id/tvProfilSaya" />
+
+    <Button
+        android:id="@+id/btGaleri"
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/btCamera"
+        android:layout_marginTop="96dp"
+        android:background="@color/color2"
+        android:text="Galeri"
+        android:textColor="@color/color1" />
+
+    <Button
+        android:id="@+id/btCamera"
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="114dp"
+        android:layout_marginTop="134dp"
+        android:background="@color/color1"
+        android:text="Kamera"
+        android:textColor="@color/color2" />
+
+    <TextView
+        android:id="@+id/tvUsername"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="229dp"
+        android:text="username" />
+
+    <TextView
+        android:id="@+id/tvNama"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/edtNama"
+        android:layout_alignParentStart="true"
+        android:text="Nama" />
+
+    <TextView
+        android:id="@+id/tvAlamat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="176dp"
+        android:text="Alamat" />
+
+    <EditText
+        android:id="@+id/edtNama"
+        android:layout_width="288dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/tvUsername" />
+
+    <EditText
+        android:id="@+id/edtAlamat"
+        android:layout_width="288dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/tvAlamat"
+        android:layout_alignParentEnd="true" />
+
+    <View
+        android:id="@+id/kolomBawah"
+        android:layout_width="match_parent"
+        android:layout_height="24dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="128dp"
+        android:background="@color/color1" />
+
+    <Button
+        android:id="@+id/btEdit"
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:layout_above="@+id/tvUsername"
+        android:layout_alignStart="@+id/btGaleri"
+        android:layout_marginBottom="-229dp"
+        android:background="@color/color1"
+        android:text="Update"
+        android:textColor="@color/color2" />
+</RelativeLayout>
